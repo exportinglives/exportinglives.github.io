@@ -1,0 +1,43 @@
+.documentary-video {
+  width: 80%;
+}
+
+@media (min-width: 1200px) {
+  .documentary-video {
+    height: 700px;
+  }
+}
+
+/* Landscape tablets and medium desktops */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .documentary-video {
+    height: 500px;
+  }
+}
+
+/* Portrait tablets and small desktops */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .documentary-video {
+    height: 400px;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+
+@media (max-width: 767px) {
+  .documentary-video {
+    height: 360px;
+  }
+}
+
+@media (max-width: 480px) {
+  .documentary-video {
+    height: 280px;
+  }
+}
+
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}

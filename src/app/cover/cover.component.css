@@ -1,0 +1,26 @@
+.elias-photo {
+  background-image: url('./../../assets/images/Elias_Photo.jpg');
+  background-repeat: no-repeat;
+  -moz-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+.exporting-lives-title {
+  z-index: 100;
+}
+
+.exporting-lives-title h1 {
+  color: white;
+}
+
+.color-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(32, 26, 22, 0.7);
+  z-index: 99;
+}
