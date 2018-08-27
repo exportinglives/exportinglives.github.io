@@ -9,7 +9,7 @@
     "prebuild": "npm run check-modules && rm -rf dist",
     "build": "./node_modules/.bin/ng build --prod",
     "predeploy": "npm run build && cp CNAME dist/",
-    "deploy": "./node_modules/.bin/gh-pages -d dist",
+    "deploy": "node gh-pages.js",
     "pretest": "npm run check-modules",
     "test": "./node_modules/.bin/ng test",
     "prelint": "npm run check-modules",
