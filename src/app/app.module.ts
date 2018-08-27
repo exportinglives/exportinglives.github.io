@@ -1,12 +1,13 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {} from '@angular/common';
 
-import { AppComponent } from './app.component';
-import { NavComponent } from './nav/nav.component';
-import { CoverComponent } from './cover/cover.component';
-import { DocumentaryComponent } from './documentary/documentary.component';
-import { PetitionsComponent } from './petitions/petitions.component';
-import { ContactComponent } from './contact/contact.component';
+import {AppComponent} from './app.component';
+import {NavComponent} from './nav/nav.component';
+import {CoverComponent} from './cover/cover.component';
+import {DocumentaryComponent} from './documentary/documentary.component';
+import {PetitionsComponent} from './petitions/petitions.component';
+import {ContactComponent} from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +16,10 @@ import { ContactComponent } from './contact/contact.component';
     CoverComponent,
     DocumentaryComponent,
     PetitionsComponent,
-    ContactComponent
+    ContactComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
