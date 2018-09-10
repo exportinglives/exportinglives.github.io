@@ -1,8 +1,8 @@
 <nav class="site-header sticky-top py-1">
   <div class="container d-flex flex-column flex-sm-row justify-content-between">
-    <a class="py-2 home" [ngx-scroll-to]="'home'">Home</a>
-    <a class="py-2 d-none d-sm-inline-block" [ngx-scroll-to]="'documentary'">Documentário</a>
-    <a class="py-2 d-none d-sm-inline-block" [ngx-scroll-to]="'petitions'">Petições</a>
-    <a class="py-2 d-none d-sm-inline-block" [ngx-scroll-to]="'contact'">Contato</a>
+    <a class="py-2 home" (click)="scroll('home')">Home</a>
+    <a class="py-2 d-none d-sm-inline-block" (click)="scroll('documentary')">Documentário</a>
+    <a class="py-2 d-none d-sm-inline-block" (click)="scroll('petitions')">Petições</a>
+    <a class="py-2 d-none d-sm-inline-block" (click)="scroll('contact')">Contato</a>
   </div>
 </nav>

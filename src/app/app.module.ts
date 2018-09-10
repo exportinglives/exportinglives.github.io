@@ -1,6 +1,5 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-import {ScrollToModule} from '@nicky-lenaers/ngx-scroll-to';
 
 import {AppComponent} from './app.component';
 import {NavComponent} from './nav/nav.component';
@@ -18,7 +17,7 @@ import {ContactComponent} from './contact/contact.component';
     PetitionsComponent,
     ContactComponent,
   ],
-  imports: [BrowserModule, ScrollToModule.forRoot()],
+  imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent],
 })
