@@ -7,6 +7,7 @@ import {CoverComponent} from './cover/cover.component';
 import {DocumentaryComponent} from './documentary/documentary.component';
 import {PetitionsComponent} from './petitions/petitions.component';
 import {ContactComponent} from './contact/contact.component';
+import { DocumentsComponent } from './documents/documents.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import {ContactComponent} from './contact/contact.component';
     DocumentaryComponent,
     PetitionsComponent,
     ContactComponent,
+    DocumentsComponent,
   ],
   imports: [BrowserModule],
   providers: [],
