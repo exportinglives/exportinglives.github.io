@@ -1,8 +1,16 @@
 <div class="flex-md-equal w-100 my-md-6 pl-md-6" id="documents">
-  <div class="bg-dark pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-    <div class="my-3 py-3 mx-auto text-white" style="width: 80%">
+  <div class="bg-dark px-3 pt-md-1 pb-md-5 px-md-5 text-center overflow-hidden">
+    <div class="my-3 py-3 mx-auto text-white">
       <h2>Documentos</h2>
     </div>
-
+    <div class="mx-auto">
+      <div class="row">
+        <div class="col-xs-12 col-md-6 col-lg-3" *ngFor="let document of documents">
+          <p class="text-white pdf-title" (click)="onClick(document)">{{document.title}}</p>
+          <pdf-viewer class="pdf-viewer" [show-all]="false" [fit-to-page]="true" (click)="onClick(document)" [external-link-target]="'blank'" [autoresize]="true" [src]="document.src" [render-text]="false"></pdf-viewer>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
+
