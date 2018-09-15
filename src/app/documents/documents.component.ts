@@ -12,11 +12,15 @@ export class DocumentsComponent implements OnInit {
   constructor() {}
 
   onClick(document) {
-    window.open(document.src)
+    window.open(document.src);
   }
 
   ngOnInit() {
     this.documents.push(
+      new Document(
+        'Ban Live Export',
+        './../../assets/doc/ban-live-export.pdf'
+      ),
       new Document(
         'Laudo veterinário feito por decisão judicial',
         './../../assets/doc/Laudo da veterinária Magda Regina realizado no Navio Nada em fevereiro de 2018.pdf'

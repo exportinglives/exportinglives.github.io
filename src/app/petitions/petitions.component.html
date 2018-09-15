@@ -1,14 +1,14 @@
-<div class="flex-md-equal w-100 my-md-6 pl-md-6" id="petitions">
+<section class="flex-md-equal w-100 my-md-6 pl-md-6" id="petitions">
   <div class="bg-light px-3 pt-md-2 px-md-5 text-center overflow-hidden">
-    <div class="my-3 py-3 mx-auto">
+    <header class="my-3 py-3 mx-auto">
       <h2>Petições</h2>
-    </div>
-    <div class="mx-auto petitions">
+    </header>
+    <article class="mx-auto petitions">
       <p *ngFor="let petition of petitions">
         {{petition.text}}
         <strong>{{petition.hashTag}}</strong>
         <a class="btn btn-sm btn-danger" href="{{petition.url}}" target="_blank" rel="external">Apoie!</a>
       </p>
-    </div>
+    </article>
   </div>
-</div>
+</section>
