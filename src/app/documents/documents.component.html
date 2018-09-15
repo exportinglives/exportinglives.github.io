@@ -9,7 +9,7 @@
           <header>
             <p class="text-white pdf-title" (click)="onClick(document)">{{document.title}}</p>
           </header>
-          <pdf-viewer [ng2-loading]="document.spinner" (after-load-complete)="hideSpinner(document)" class="pdf-viewer" [show-all]="false" [fit-to-page]="true" (click)="onClick(document)"
+          <pdf-viewer [ng2-loading]="document.spinner" [config]="loadingConfig" (after-load-complete)="hideSpinner(document)" class="pdf-viewer" [show-all]="false" [fit-to-page]="true" (click)="onClick(document)"
             [external-link-target]="'blank'" [autoresize]="true" [src]="document.src" [render-text]="false"></pdf-viewer>
         </article>
       </div>

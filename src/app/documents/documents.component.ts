@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {INg2LoadingSpinnerConfig, ANIMATION_TYPES} from 'ng2-loading-spinner';
 import {Document} from './Models/Document';
 
 @Component({
@@ -8,6 +9,11 @@ import {Document} from './Models/Document';
 })
 export class DocumentsComponent implements OnInit {
   documents: Array<Document> = [];
+
+  loadingConfig: INg2LoadingSpinnerConfig = {
+    animationType: ANIMATION_TYPES.chasingDots,
+    spinnerSize: 'lg',
+  };
 
   constructor() {}
 
