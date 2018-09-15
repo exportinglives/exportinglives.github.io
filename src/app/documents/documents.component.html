@@ -7,12 +7,12 @@
       <div class="row">
         <article class="col-xs-12 col-md" *ngFor="let document of documents">
           <header>
-              <p class="text-white pdf-title" (click)="onClick(document)">{{document.title}}</p>
+            <p class="text-white pdf-title" (click)="onClick(document)">{{document.title}}</p>
           </header>
-          <pdf-viewer class="pdf-viewer" [show-all]="false" [fit-to-page]="true" (click)="onClick(document)" [external-link-target]="'blank'" [autoresize]="true" [src]="document.src" [render-text]="false"></pdf-viewer>
+          <pdf-viewer [ng2-loading]="document.spinner" (after-load-complete)="hideSpinner(document)" class="pdf-viewer" [show-all]="false" [fit-to-page]="true" (click)="onClick(document)"
+            [external-link-target]="'blank'" [autoresize]="true" [src]="document.src" [render-text]="false"></pdf-viewer>
         </article>
       </div>
     </div>
   </div>
 </section>
-

@@ -2,6 +2,7 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 
 import {PdfViewerModule} from 'ng2-pdf-viewer';
+import {Ng2LoadingSpinnerModule} from 'ng2-loading-spinner';
 
 import {AppComponent} from './app.component';
 import {NavComponent} from './nav/nav.component';
@@ -21,7 +22,7 @@ import {DocumentsComponent} from './documents/documents.component';
     ContactComponent,
     DocumentsComponent,
   ],
-  imports: [BrowserModule, PdfViewerModule],
+  imports: [BrowserModule, PdfViewerModule, Ng2LoadingSpinnerModule],
   providers: [],
   bootstrap: [AppComponent],
 })

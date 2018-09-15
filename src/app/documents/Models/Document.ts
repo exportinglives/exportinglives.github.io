@@ -1,6 +1,7 @@
 export class Document {
   title: String;
   src: String;
+  spinner: Boolean = true;
 
   /**
    * Document constructor
