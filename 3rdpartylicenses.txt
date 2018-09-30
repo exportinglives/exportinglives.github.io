@@ -205,7 +205,7 @@ querystring@0.2.0
 MIT
 MIT
 
-webpack@4.17.2
+webpack@4.19.1
 MIT
 Copyright JS Foundation and other contributors
 
