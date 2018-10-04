@@ -1,13 +1,13 @@
 <section class="flex-md-equal w-100 my-md-6 pl-md-6" id="petitions">
   <div class="bg-light px-3 pt-md-1 pb-md-4 px-md-5 text-center overflow-hidden">
     <header class="my-3 py-3 mx-auto">
-      <h2>Petições</h2>
+      <h2 i18n="@@petitions">Petições</h2>
     </header>
     <article class="mx-auto petitions">
       <p *ngFor="let petition of petitions">
         {{petition.text}}
         <strong>{{petition.hashTag}}</strong>
-        <a class="btn btn-sm btn-danger" href="{{petition.url}}" target="_blank" rel="external">Apoie!</a>
+        <a class="btn btn-sm btn-danger" href="{{petition.url}}" target="_blank" rel="external" i18n="@@support">Apoie!</a>
       </p>
     </article>
   </div>
