@@ -10,12 +10,8 @@
     "build": "./node_modules/.bin/ng build --prod",
     "predeploy": "rm -rf node_modules/ && npm run build && cp CNAME dist/",
     "deploy": "node gh-pages.js",
-    "pretest": "npm run check-modules",
-    "test": "./node_modules/.bin/ng test",
     "prelint": "npm run check-modules",
-    "lint": "./node_modules/.bin/ng lint",
-    "pree2e": "npm run check-modules",
-    "e2e": "./node_modules/.bin/ng e2e"
+    "lint": "./node_modules/.bin/ng lint"
   },
   "private": true,
   "dependencies": {
