@@ -9,7 +9,8 @@
     "prebuild": "npm run check-modules && rm -rf dist",
     "build": "./node_modules/.bin/ng build --prod && npm run build-en",
     "build-en": "./node_modules/.bin/ng build --prod -c=en",
-    "predeploy": "rm -rf node_modules/ && npm run build && cp CNAME dist/",
+    "translate-index": "bash ./scripts/translate.bash",
+    "predeploy": "rm -rf node_modules/ && npm run build && cp CNAME dist/ && npm run translate-index",
     "deploy": "node gh-pages.js",
     "prelint": "npm run check-modules",
     "lint": "./node_modules/.bin/ng lint"
