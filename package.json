@@ -24,7 +24,7 @@
     "@angular/forms": "^6.1.9",
     "@angular/http": "^6.1.9",
     "@angular/platform-browser": "^6.1.9",
-    "@angular/platform-browser-dynamic": "^6.1.9",
+    "@angular/platform-browser-dynamic": "^6.1.10",
     "@angular/router": "^6.1.9",
     "@fortawesome/fontawesome-free": "^5.4.0",
     "bootstrap": "^4.1.3",
