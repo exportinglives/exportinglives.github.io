@@ -39,10 +39,6 @@ export class DocumentsComponent implements OnInit {
       new Document(
         'Parecer do procurador geral da República',
         './../../assets/doc/Parecer do procurador geral da República condenando a exportação de animais vivos.pdf'
-      ),
-      new Document(
-        'PL 31 é plenamente Constitucional',
-        './../../assets/doc/PL 31 é plenamente Constitucional.pdf'
       )
     );
   }

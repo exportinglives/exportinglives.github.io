@@ -5,7 +5,7 @@
     </header>
     <div class="mx-auto">
       <div class="row">
-        <article class="col-xs-12 col-md" *ngFor="let document of documents">
+        <article class="col-xs-12 col-md-3" *ngFor="let document of documents">
           <header>
             <p class="text-white pdf-title" (click)="onClick(document)">{{document.title}}</p>
           </header>
