@@ -6,10 +6,10 @@
     "ng": "./node_modules/.bin/ng",
     "prestart": "npm run check-modules",
     "start": "./node_modules/.bin/ng serve -o",
-    "prebuild": "npm run check-modules && rm -rf dist",
+    "prebuild": "npm run check-modules",
     "build": "./node_modules/.bin/ng build --prod",
     "translate-index": "bash ./scripts/translate.bash",
-    "predeploy": "rm -rf node_modules/ && npm run build && npm run build -- --c=en && cp CNAME dist/ && npm run translate-index",
+    "predeploy": "rm -rf node_modules/ dist/ && npm run build && npm run build -- --c=en && cp CNAME dist/ && npm run translate-index",
     "deploy": "node gh-pages.js",
     "prelint": "npm run check-modules",
     "lint": "./node_modules/.bin/ng lint"
