@@ -1,21 +1,30 @@
-# [exportinglives.github.io](https://exportinglives.github.io)
-Exporting Lives
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
 
-[![LICENSE](https://img.shields.io/github/license/henriquecarv/loopback-connector-realtime-database.svg)](./LICENSE)
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=exportinglives/exportinglives.github.io)](https://dependabot.com)
+## Getting Started
 
+First, run the development server:
 
-## System Requirements
-* **[NodeJS](https://nodejs.org/en/)** (version >= 8).
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-## Running the Application
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-* `npm start`
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-## Build
+## Learn More
 
-* `npm run build`
+To learn more about Next.js, take a look at the following resources:
 
-## Deploying to GitHub Pages
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-* `npm run deploy`
+You can check out [the Next.js GitHub repository](https://github.com/zeit/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on ZEIT Now
+
+The easiest way to deploy your Next.js app is to use the [ZEIT Now Platform](https://zeit.co/) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
